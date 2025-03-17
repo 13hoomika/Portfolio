@@ -1,33 +1,13 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (excluding resume link)
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    // Check if the link is not the resume link
+    if (!this.getAttribute('href').endsWith('.pdf')) {
+      e.preventDefault(); // Prevent default behavior only for non-resume links
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+    // If it's the resume link, let the default behavior (redirect) happen
   });
 });
-
-// // Animate progress bars on scroll
-// const progressBars = document.querySelectorAll('.progress');
-
-// const animateProgressBars = () => {
-//   progressBars.forEach(bar => {
-//     const width = bar.style.width;
-//     bar.style.width = '0';
-//     setTimeout(() => {
-//       bar.style.width = width;
-//     }, 500);
-//   });
-// };
-
-// window.addEventListener('scroll', () => {
-//   const skillsSection = document.getElementById('skills');
-//   const sectionTop = skillsSection.offsetTop;
-//   const sectionHeight = skillsSection.offsetHeight;
-//   const scrollPosition = window.scrollY;
-
-//   if (scrollPosition > sectionTop - window.innerHeight + sectionHeight / 2) {
-//     animateProgressBars();
-//   }
-// });
