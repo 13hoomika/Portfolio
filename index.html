@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhoomika C P - Java Developer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- email -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <a href="#" class="logo">Bhoomika C P</a>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="menu-icon" class="fas fa-bars"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1>Bhoomika C P</h1>
+      <h3>And I'm a <span id="dynamic-text"></span></h3>
+      <p>
+        I am an aspiring <strong>Java developer</strong> with a strong foundation in back-end and full-stack development. 
+        Skilled in <strong>Java, JDBC, Hibernate, and SQL</strong>,
+        seeking an opportunity to apply my knowledge and build scalable software solutions in a growth-focused organization."
+      </p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/bhoomikacp" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/13hoomika" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:bhoomikacp24@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div><br>
+      <a href="resume/resume.pdf" download="Bhoomika_Resume.pdf" class="btn">Download Resume</a>
+    </div>
+    <div class="home-img">
+      <img src="images/profile.jpg" alt="Bhoomika C P">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/profile.jpg" alt="Bhoomika C P">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Java Developer | Full-Stack Enthusiast</h3>
+      <p>
+        I am passionate about developing efficient and scalable web applications. 
+        As a dedicated Software Developer with a strong foundation in Java full-stack development, 
+        I have gained hands-on experience over the past six months working with Java, Spring, web technologies, 
+        and JPA, Servlet for effective database management.
+        My enthusiasm for coding and continuous learning motivates me to create robust applications. 
+        I am excited to apply my expertise, contribute to innovative projects, and collaborate with dynamic teams to drive technological advancement.
+      </p>
+    </div>
+  </section>
+
+ <!-- Skills Section -->
+<section class="section-skills" id="skills">
+  <h2 class="sub-title">Technical <span>Skills</span></h2>
+  <div class="skills-container">
+    <!-- Programming Languages -->
+    <div class="skill-card">
+      <h3>Programming Languages</h3>
+      <ul class="skill-list">
+        <!-- <li><i class="fas fa-code"></i>Java (Core Java, Java 8 Features)</li> -->
+        <li><img src="images/icons/icons8-java-48.png" alt="Java logo" class="skill-icon">Java (Core Java, Java 8 Features)</li>
+      </ul>
+    </div>
+
+    <!-- Frameworks/Libraries -->
+    <div class="skill-card">
+      <h3>Frameworks/Libraries</h3>
+      <ul class="skill-list">
+        <!-- <li><i class="fas fa-layer-group"></i>Spring Framework (Spring MVC, Spring JPA)</li> -->
+        <li><img src="images/icons/icons8-spring-boot-48.png" alt="spring logo" class="skill-icon">Spring Framework (Spring MVC, Spring JPA)</li>
+        <!-- <li><i class="fas fa-database"></i>Hibernate (ORM Framework)</li> -->
+        <li><img src="images/icons/Hibernate-icon.png" alt="Hibernate logo" class="skill-icon">Hibernate (ORM Framework)</li>
+      </ul>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-card">
+      <h3>Web Development</h3>
+      <ul class="skill-list">
+        <li><i class="fab fa-html5"></i>HTML5</li>
+        <li><i class="fab fa-css3-alt"></i>CSS</li>
+        <li><i class="fab fa-js"></i>JavaScript</li>
+        <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+      </ul>
+    </div>
+
+    <!-- API -->
+    <div class="skill-card">
+      <h3>API</h3>
+      <ul class="skill-list">
+        <li><i class="fas fa-layer-group"></i>JDBC</li>
+        <li><i class="fas fa-file-code"></i>JSP</li>
+        <li><i class="fas fa-server"></i>Servlet API</li>
+      </ul>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-card">
+      <h3>Databases</h3>
+      <ul class="skill-list">
+        <li><i class="fas fa-database"></i>MySQL</li>
+      </ul>
+    </div>
+
+    <!-- Version Control -->
+    <div class="skill-card">
+      <h3>Version Control</h3>
+      <ul class="skill-list">
+        <li><i class="fab fa-git-alt"></i>Git (GitHub)</li>
+      </ul>
+    </div>
+
+    <!-- IDE & Tools -->
+    <div class="skill-card">
+      <h3>IDE & Tools</h3>
+      <ul class="skill-list">
+        <!-- <li><i class="fas fa-tools"></i>IntelliJ IDEA</li> -->
+        <li><img src="images/icons/intellij-idea-logo-png_seeklogo-284399.png" alt="intellij logo" class="skill-icon"></i>IntelliJ IDEA</li>
+        <!-- <li><i class="fas fa-tools"></i>MySQL Workbench</li> -->
+        <li><img src="images/icons/mysql-logo-png_seeklogo-273735.png" alt="mysql logo" class="skill-icon"></i>MySQL Workbench</li>
+        <li><i class="fas fa-code"></i>VS Code</li>
+      </ul>
+    </div>
+
+    <!-- Web Servers -->
+    <div class="skill-card">
+      <h3>Web Servers</h3>
+      <ul class="skill-list">
+        <li><i class="fas fa-server"></i>Apache Tomcat</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="sub-title">My <span>Projects</span></h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Quick Chat</h3>
+        <p><strong>Technologies:</strong> Java, Android Studio, Firebase</p>
+        <p>
+          Developed a real-time chat application with secure login and user engagement features. 
+          Used Firebase for authentication and real-time data synchronization.
+        </p>
+        <a href="https://github.com/13hoomika/quick-chat" target="_blank" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Your Food Pals App GUI</h3>
+        <p><strong>Technologies:</strong> Dart, Android Studio</p>
+        <p>
+          Created a recipe app with step-by-step instructions, vibrant imagery, and nutritional insights 
+          like calorie counts and dietary information.
+        </p>
+        <a href="https://github.com/13hoomika/food-pals" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <div class="contact-container">
+      <form id="contactForm">
+        <div class="input-box">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-box">
+          <input type="text" id="subject" placeholder="Subject" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+        </div>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer class="footer">
+    <p>&copy; 2024 Bhoomika C P. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/bhoomikacp" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/13hoomika" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:bhoomikacp24@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer> -->
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
