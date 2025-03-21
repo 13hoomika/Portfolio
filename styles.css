@@ -152,6 +152,7 @@ span {
   font-size: 1.5rem !important;
   color: rgb(109, 109, 109);
   /* font-family: cursive; */
+  text-align: justify;
 }
 
 .social-media a {
@@ -237,6 +238,7 @@ span {
 
 .about-content p {
   /* font-family: cursive; */
+  text-align: justify;
   font-size: 1.5rem;
   color: rgb(109, 109, 109);
   margin: 20px 20px;
