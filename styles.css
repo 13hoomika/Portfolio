@@ -65,6 +65,11 @@ section {
   transform: scale(1.05);
 }
 
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
 .navbar a {
   font-size: 1.9rem;
   color: var(--main-color);
@@ -540,12 +545,16 @@ textarea {
   }
 
   /* Skills Section */
-  .Technical-bars {
-    gap: 1rem;
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
   }
 
-  .bar .info span {
-    font-size: 1.6rem;
+  .skill-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .skill-list li {
+    font-size: 1.4rem;
   }
 
   /* Projects Section */
@@ -606,6 +615,11 @@ textarea {
     font-size: 1.2rem;
   }
 
+  /* skills Section */
+  .skills-container {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+ 
   /* Contact Section */
   .contact h2 {
     font-size: 3.5rem;
