@@ -403,6 +403,12 @@
   .project-card:hover p {
       color: white; /* Ensures text is readable on hover */
   } 
+/* Change button color on hover */
+.project-card:hover .btn {
+    background: white; /* Button background changes to white */
+    color: var(--main-color); /* Text color changes to match theme */
+    border: 2px solid white;
+}
   
   /* Contact Section Styles */
   .contact {
