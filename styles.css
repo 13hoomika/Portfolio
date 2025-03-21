@@ -47,8 +47,8 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 5%;
-  background-color: var(--snd-bg-color);
-  backdrop-filter: blur(10px);
+  background-color: transparent; /* Make navbar transparent */
+  backdrop-filter: blur(10px); /* Add blur effect to make content behind visible */
   transition: all 0.5s ease;
 }
 
@@ -484,11 +484,11 @@ textarea {
     top: 100%;
     left: 0;
     width: 100%;
-    background: var(--snd-bg-color);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7); /* More transparent background */
+    backdrop-filter: blur(10px); /* Add blur effect */
     flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
+    align-items: flex-end; /* Align links to the left */
+    padding: 1rem 2rem; /* Add padding to the left */
     display: none; /* Hide navbar by default */
   }
 
