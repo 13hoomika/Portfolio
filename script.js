@@ -39,6 +39,12 @@ function typeWriter() {
 // Start the typewriter effect
 typeWriter();
 
+// Toggle mobile menu
+  document.getElementById('menu-icon').addEventListener('click', function () {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+  });
+
 // Initialize EmailJS
 (function(){
   emailjs.init("4_azlP0JLiOfn1Y8Z"); // Replace with your EmailJS user ID
